@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="ad.size" content="width=728,height=90">
+	<title>Paypal Merchant</title>
+	<link rel="stylesheet" href="../../../menu_data_002/ads_data/ads_data/index_data/style.css">
+	<script type="text/javascript">
+	  var clickTag = "http://www.google.com";
+	</script>
+	<script> 
+	function preload(){function e(){n===t-1?r[t]():n++}var n=0,a=new Array,t=preload.arguments.length-1,r=preload.arguments;for(i=0;i<t;i++)a[i]=new Image,a[i].src=preload.arguments[i],addEvent(a[i],"load",e)}function addEvent(e,n,a){e.addEventListener?e.addEventListener(n,a,!1):e.attachEvent&&e.attachEvent("on"+n,a)}
+	</script>
+<script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script></head>
+<body>
+	<div id="main" style="display: block;">
+		<div class="bg" style="transform: matrix(0.6, 0, 0, 0.6, 140, -42);">
+			<img src="index_data/bg.jpg" alt="Backgorund Image">
+		</div>
+		<div class="gradient"></div>
+		<div class="yellow-bg" style="opacity: 0; transform: matrix(1, 0, -0.17632, 0.99999, 600, 0);"></div>
+		<div class="sprite txt1" style="transform: matrix(1, 0, 0, 1, 80, 0); opacity: 0;"></div>
+		<div class="sprite txt2" style="transform: matrix(1, 0, 0, 1, 80, 0); opacity: 0;"></div>
+		<div class="sprite txt3" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+		<div class="sprite card" style="transform: matrix(1, 0, 0, 1, 325, 0);"></div>
+		<div class="sprite logo"></div>
+		<div class="corners">
+			<div class="purple"></div>
+			<div class="pink"></div>
+		</div>
+		<div class="exit"></div>
+		<div class="btn" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+			<div class="bg-skew"></div>
+			<div class="sprite cta"></div>
+		</div>
+	</div>
+	<script src="index_data/tweenmax_1.js"></script>
+	<script>
+		preload('sprite.png','bg.jpg',init);
+		function init(){
+			var $ = document.querySelector.bind(document);
+		  var tl1 = new TimelineMax()
+		  .to('#main', 0, {display:'block'})
+// addPause()
+		  .from('.txt1', .5, {x:-560, ease:Power2.easeOut})
+
+		  .to('.txt1', .5, {x:80, opacity:0, ease:Power2.easeOut}, 'text1+=2')
+		  .to('.yellow-bg', .5, {x:600, opacity:1,ease:Power2.easeOut})
+		  // .addPause()
+		  .from('.txt2', .5, {x:-560, ease:Power2.easeOut})
+		  .from('.card', .5, {x:325, ease: Back.easeOut.config(1.2)})
+		  .to('.card', .5, {x:325, ease:Power2.easeOut}, 'text2+=1.7')
+		  .to('.txt2', .5, {x:80, opacity:0, ease:Power2.easeOut}, 'text2+=1.7')
+		  .to('.yellow-bg', 1.5, {opacity:0, ease:Power2.easeOut}, 'text2+=2')
+		  .to('.bg', 1.5, {scale:.6, x:140, y:-42, ease:Power2.easeOut}, 'text2+=2')
+		  .from('.txt3', .5, {x:-560, ease:Power2.easeOut})
+		  .from('.btn', .5, {scale:0, ease: Back.easeOut.config(1)})
+
+		  $('.exit').addEventListener('click', function(){
+		  	window.open(clickTag)
+		  })
+		  $('.btn').addEventListener('click', function(){
+		  	window.open(clickTag)
+		  })
+
+		}
+	</script>
+
+</body></html>

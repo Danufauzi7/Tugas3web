@@ -1,0 +1,375 @@
+/*
+Theme Coder: Danu Bakhtiar Fauzi
+FirstColor: #0072c6
+SecondColor:#ffffff
+*/
+
+/* Start Navbar*/
+.navbar span {
+	margin-right: 10px;
+}
+/* End Navbar  */
+
+/* Start Slider */
+
+.slider {
+	height: auto !important;
+}
+.slider .grid {
+	margin: 0 !important;
+	background-color: #0072c6;
+}
+
+.slider .cell2 {
+	margin:0 !important;
+}
+
+.slider .cell1 {
+	color: #fff;
+	font-size: 40px;
+	padding-top: 80px;
+	float: left;
+	margin:0 !important;
+}
+
+.slider .cell1 span {
+	font-weight: bold;
+}
+/* End Slider */
+
+/* Start setup */
+.setup {
+	padding: 50px 0;
+	height: auto;
+}
+
+.setup .grid {
+	margin: 0 !important;
+}
+
+.setup .cell {
+	padding: 20px;
+}
+
+.setup .cell i {
+	background-color:  #0072c6;
+	border-radius: 50%;
+	color: #fff;
+	padding: 12px;
+}
+
+.setup .cell h3 {
+	color: #0072c6;
+	font-size: 22px;
+}
+
+.setup .cell p {
+	color: #989898;
+}
+
+/* End Setup */
+/* Start Features*/
+
+.features {
+	padding: 20px 0;
+	background-color: #f0f0f0;
+}
+
+.features hr {
+	width: 50px;
+}
+
+.features img {
+	position: absolute;
+}
+
+.features .cell1 i {
+	float: right;
+	background-color:  #0072c6;
+	margin-right: 150px;
+	padding: 12px;
+	border-radius: 50%;
+	color: #fff;
+}
+
+.features .cell1 p {
+	text-align: right;
+	margin-right: 230px;
+}
+.features .cell1 h4{
+	text-align: right;
+	margin-right: 230px;
+	line-height: 0;
+}
+
+.features .grid .cells2 .cell1 .row{
+	margin: 35px 0;
+}
+
+.features .grid .cells2 .cell2 .row{
+	margin-top: 35px;
+	margin-left: 100px;
+}
+.features .cell2 i {
+	float: left;
+	background-color:  #0072c6;
+	padding: 12px;
+	border-radius: 50%;
+	color: #fff;
+}
+
+.features .cell2 p {
+	text-align: left;
+	margin-left: 80px;
+}
+.features .cell2 h4{
+	text-align: left;
+	line-height: 0;
+	margin-left: 80px;
+}
+
+/* End Features*/
+/* Start Reviews */
+.reviews {
+	background-color: #0072c6;
+}
+
+.reviews hr {
+	width: 50px;
+}
+
+.reviews .grid {
+	margin: 0 auto;
+}
+.reviews .cell {
+	width: 500px;
+	margin: 40px auto;
+}
+
+.reviews .cell img {
+	border-radius: 50%;
+	height: 78px;
+	width: 78px;
+	float: left;
+}
+
+.reviews .carousel {
+	height: 250px;
+}
+
+.reviews .carousel .carousel-bullets {
+	bottom: 40px;
+}
+
+.reviews .cell .popover {
+	width: 400px;
+	float: right;
+	border-radius: 10px;
+	color: #fff;
+}
+
+.reviews .cell .popover p {
+	color: #000;
+}
+
+/* End Reviews */
+/* Start Screens */
+
+.screens{
+	padding: 20px 0;
+}
+.screens hr {
+	width: 50px;
+}
+
+.screens button {
+	border-radius: 20px;
+	margin: 30px 5px;
+}
+
+.screens .carousel {
+	height: 450px !important;
+	margin-top: 50px;
+}
+
+.screens .grid .row {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.screens .grid .row .cell{
+	width: auto;
+}
+
+.screens .carousel .carousel-switch-next {
+    right: 110px;
+    margin-top: -2rem;
+    font-size: 4rem;
+	font-weight: bold;
+	color: #0072c6;
+}
+
+.screens .carousel .carousel-switch-prev {
+    left: 110px;
+    margin-top: -2rem;
+    font-size: 4rem;
+	font-weight: bold;
+	color: #0072c6;
+}
+
+.screens .grid .row p {
+	margin-top:30px;
+	color: #989898;
+}
+
+/* End Screens */
+/* Start Demo */
+
+.demo {
+	padding: 20px 0;
+	background-color: #f0f0f0;
+}
+.demo hr {
+	width: 50px;
+}
+.demo .row {
+	padding-top: 40px;
+}
+/* End Demo */
+/* Start Get App*/ 
+.get-app {
+	padding: 20px 0;
+	background-color: #0072c6;
+}
+
+.get-app hr {
+	width: 50px;
+}
+
+.get-app p {
+	margin: 0;
+}
+
+.get-app h4 {
+	margin : 0;
+}
+
+.get-app button {
+	margin: 40px 5px;
+	border: 1px solid #0072c6;
+	color: #0072c6;
+	background-color: #fff;
+}
+
+
+/*End Get App*/
+/* Start Support*/
+.support {
+	padding: 20px 0 40px 0;
+}
+
+.support .grid {
+	margin: 0;
+}
+
+.support .align-center {
+	padding: 20px 0;
+}
+.support hr {
+	width: 50px;
+}
+
+.support .colspan7 .row {
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.support .colspan7 input {
+	border-radius: 20px;
+}
+
+.support .colspan7 textarea {
+	border-radius: 10px;
+}
+
+.support .colspan7 button {
+	border-radius: 20px;
+	border: 1px solid #0072c6;
+	background-color: #fff;
+	color: #0072c6;
+	width: 100px;
+}
+
+.support .input-control {
+	width: 24.25rem !important;
+}
+
+
+.support .input-control.textarea{
+	width: 385px;
+	height: 138px;
+}
+
+.support .colspan5 .row .cell {
+	margin: 5px 0px;;
+}
+
+.support .colspan5 .row span {
+	float: left;
+	background-color:  #0072c6;
+	padding: 12px;
+	border-radius: 50%;
+	color: #fff;
+	margin-right: 10px;
+}
+
+.support .colspan5 .row p {
+	margin: 10px auto;
+}
+
+
+/* End Support*/
+/*Start Footer*/
+.footer {
+	background-color: #0072c6;
+	padding: 20px 0;
+	color: #ffffff;
+}
+
+.footer h2 {
+	margin: 20px;
+}
+
+.footer span {
+	padding: 12px;
+	border-radius: 50%;
+	border: 1px solid #ffffff;
+	margin: 10px auto;
+}
+
+.footer p {
+	margin: 10px;
+	line-height: 1.5rem;
+}
+
+/*End Footer*/
+/* Start Media Query */
+
+@media screen and (max-width: 980px) {
+	.container {
+		width: auto !important;
+	}
+
+
+@media screen and (max-width: 700px) {
+	.container {
+		width: auto !important;
+	}
+}
+@media screen and (max-width: 480px) {
+	.container {
+		width: auto !important;
+	}	
+}
+
+/* End Media Query */

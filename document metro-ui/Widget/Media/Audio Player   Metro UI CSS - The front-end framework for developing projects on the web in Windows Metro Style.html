@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html><head lang="en">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Metro, a sleek, intuitive, and powerful framework for faster and easier web development for Windows Metro Style.">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, metro, front-end, frontend, web development">
+    <meta name="author" content="Sergey Pimenov and Metro UI CSS contributors">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://metroui.org.ua/favicon.ico">
+    <title>Audio Player :: Metro UI CSS - The front-end framework for developing projects on the web in Windows Metro Style</title>
+
+    <link href="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/metro.css" rel="stylesheet">
+    <link href="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/metro-icons.css" rel="stylesheet">
+    <link href="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/metro-responsive.css" rel="stylesheet">
+    <link href="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/metro-schemes.css" rel="stylesheet">
+
+    <link href="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/docs.css" rel="stylesheet">
+
+    <script src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/ca-pub-1632668592742327.js"></script><script async="" src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/analytics.js"></script><script src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/jquery-2.js"></script>
+    <script src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/metro.js"></script>
+    <script src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/docs.js"></script>
+    <link rel="stylesheet" type="text/css" href="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/prettify.css">
+    <script src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/ga.js"></script>
+    <script async="" src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/adsbygoogle.js"></script>
+
+    <script>
+        function playList(){
+            return {
+                title: "Scorpions - Return to Forever",
+                poster: "http://metroui.org.ua/res/scorpions_poster.jpg",
+                desc: "German heavy metal icons the Scorpions hit the 50-year mark in 2015, being initially conceived all the way back in 1965 by a 16-year-old Rudolf Schenker as a beat band very much in line with the trends of the time, and slowly evolving into a hard rock force to contend with by the end of the '70s.",
+                items: [
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/01  Going Out With A Bang.mp3"},
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/02  We Built This House.mp3"},
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/03  Rock My Car.mp3"},
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/04  House Of Cards.mp3"},
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/05  All For One.mp3"},
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/06  Rock'N'Roll Band.mp3"},
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/07  Catch Your Luck And Play.mp3"},
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/08  Rollin' Home.mp3"},
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/09  Hard Rockin' The Place.mp3"},
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/10  Eye Of The Storm.mp3"},
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/11  The Scratch.mp3"},
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/12  Gypsy Life.mp3"},
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/13  The World We Used To Know.mp3"},
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/14  Dancing With The Moonlight.mp3"},
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/15  When The Truth Is A Lie.mp3"},
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/16  Who We Are.mp3"},
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/17  Crazy Ride.mp3"},
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/18  One And One Is Three.mp3"},
+                    {file: "http://metroui.org.ua/res/scorpions/return_to_forever/19  Delirious.mp3"}
+                ]
+            }
+        }
+    </script>
+<link rel="preload" href="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/integrator_002.js" as="script"><script type="text/javascript" src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/integrator_002.js"></script><link rel="preload" href="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/integrator.js" as="script"><script type="text/javascript" src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/integrator.js"></script></head>
+<body>
+    <div><header class="app-bar fixed-top navy" data-role="appbar">
+    <div class="container">
+        <a href="https://metroui.org.ua/" class="app-bar-element branding"><img src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/wn8.png" style="height: 28px; display: inline-block; margin-right: 10px;"> Metro UI CSS</a>
+
+        <ul class="app-bar-menu small-dropdown">
+            <li data-flexorderorigin="0" data-flexorder="1" class="">
+                <a href="#" class="dropdown-toggle">Base CSS</a>
+                <ul class="d-menu" data-role="dropdown" data-no-close="true" style="display: none;">
+                    <li class="disabled"><a href="https://metroui.org.ua/overview.html">Overview</a></li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="" class="dropdown-toggle">Grid system</a>
+                        <ul class="d-menu" data-role="dropdown">
+                            <li><a href="https://metroui.org.ua/grid.html">Simple grid</a></li>
+                            <li><a href="https://metroui.org.ua/flexgrid.html">Flex grid</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://metroui.org.ua/typography.html">Typography</a></li>
+                    <li><a href="https://metroui.org.ua/tables.html">Tables</a></li>
+                    <li><a href="https://metroui.org.ua/inputs.html">Forms &amp; Inputs</a></li>
+                    <li><a href="https://metroui.org.ua/buttons.html">Buttons</a></li>
+                    <li><a href="https://metroui.org.ua/images.html">Images</a></li>
+                    <li><a href="https://metroui.org.ua/font.html">Metro Icon Font</a></li>
+                    <li class="divider"></li>
+                    <li><a href="https://metroui.org.ua/colors.html">Colors</a></li>
+                    <li><a href="https://metroui.org.ua/helpers.html">Helpers classes</a></li>
+                    <li class="divider"></li>
+                    <li><a href="https://metroui.org.ua/rtl.html">RTL Support</a></li>
+                    <li class="disabled"><a href="https://metroui.org.ua/responsive.html">Responsive</a></li>
+                </ul>
+            </li>
+            <li data-flexorderorigin="1" data-flexorder="2" class="">
+                <a href="#" class="dropdown-toggle active-toggle">Widgets</a>
+                <ul class="d-menu" data-role="dropdown" data-no-close="true" style="display: block;">
+                    <li>
+                        <a href="#" class="dropdown-toggle">Menus</a>
+                        <ul class="d-menu" data-role="dropdown" data-no-close="true">
+                            <li><a href="https://metroui.org.ua/appbar.html">Application bar</a></li>
+                            <li><a href="https://metroui.org.ua/menu.html">Menus</a></li>
+                            <li><a href="https://metroui.org.ua/fluent-menu.html">Fluent menu</a></li>
+                            <li><a href="https://metroui.org.ua/sidebar.html">Sidebar</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Controls</a>
+                        <ul class="d-menu" data-role="dropdown" data-no-close="true">
+                            <li><a href="https://metroui.org.ua/accordion.html">Accordion</a></li>
+                            <li><a href="https://metroui.org.ua/button-groups.html">Button groups</a></li>
+                            <li><a href="https://metroui.org.ua/keypad.html">Keypad</a></li>
+                            <li><a href="https://metroui.org.ua/tabcontrol.html">Tab Control</a></li>
+                            <li><a href="https://metroui.org.ua/treeview.html">TreeView</a></li>
+                            <li><a href="https://metroui.org.ua/listview.html">ListView</a></li>
+                            <li><a href="https://metroui.org.ua/sliders.html">Slider</a></li>
+                            <li><a href="https://metroui.org.ua/stepper.html">Stepper</a></li>
+                            <li><a href="https://metroui.org.ua/wizard.html">Wizard</a></li>
+                            <li><a href="https://metroui.org.ua/wizard2.html">Wizard2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Visualization</a>
+                        <ul class="d-menu" data-role="dropdown" data-no-close="true">
+                            <li><a href="https://metroui.org.ua/tiles.html">Tiles</a></li>
+                            <li><a href="https://metroui.org.ua/carousel.html">Carousel</a></li>
+                            <li class="no-display"><a href="https://metroui.org.ua/windows.html">Windows</a></li>
+                            <li><a href="https://metroui.org.ua/popovers.html">Popovers</a></li>
+                            <li><a href="https://metroui.org.ua/progressbar.html">Progress Bar</a></li>
+                            <li><a href="https://metroui.org.ua/panels.html">Panels</a></li>
+                            <li><a href="https://metroui.org.ua/rating.html">Rating</a></li>
+                            <li><a href="https://metroui.org.ua/preloaders.html">Preloaders</a></li>
+                            <li><a href="https://metroui.org.ua/hints.html">Hints</a></li>
+                            <li><a href="https://metroui.org.ua/streamer.html">Streamer</a></li>
+                            <li><a href="https://metroui.org.ua/presenter.html">Presenter</a></li>
+                            <li><a href="https://metroui.org.ua/donut.html">Donut Chart</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Information</a>
+                        <ul class="d-menu" data-role="dropdown" data-no-close="true">
+                            <li><a href="https://metroui.org.ua/notify.html">Notify system</a></li>
+                            <li><a href="https://metroui.org.ua/dialog.html">Dialogs</a></li>
+                            <li><a href="https://metroui.org.ua/windows.html">Window</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Date &amp; Time</a>
+                        <ul class="d-menu" data-role="dropdown" data-no-close="true">
+                            <li><a href="https://metroui.org.ua/calendar.html">Calendar</a></li>
+                            <li><a href="https://metroui.org.ua/datepicker.html">Datepicker</a></li>
+                            <li><a href="https://metroui.org.ua/countdown.html">Countdown</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Media</a>
+                        <ul class="d-menu" data-role="dropdown">
+                            <li><a href="https://metroui.org.ua/video-player.html">Video player</a></li>
+                            <li><a href="https://metroui.org.ua/audio-player.html">Audio player</a></li>
+                        </ul>
+                    </li>
+                    <li class="active-container">
+                        <a href="#" class="dropdown-toggle active-toggle">Tools</a>
+                        <ul class="d-menu" data-role="dropdown" style="display: block;">
+                            <li><a href="https://metroui.org.ua/validator.html">Form Validator</a></li>
+                            <li><a href="https://metroui.org.ua/draggable.html">Draggable</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://metroui.org.ua/charms.html">Charms</a></li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Events &amp; Hotkeys</a>
+                        <ul class="d-menu" data-role="dropdown">
+                            <li><a href="https://metroui.org.ua/events.html">Event binding</a></li>
+                            <li><a href="https://metroui.org.ua/hotkeys.html">Hotkey binding</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Third-party</a>
+                        <ul class="d-menu" data-role="dropdown" data-no-close="true">
+                            <li><a href="https://metroui.org.ua/select2.html">Select2</a></li>
+                            <li><a href="https://metroui.org.ua/datatables.html">DataTables</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Utils</a>
+                        <ul class="d-menu" data-role="dropdown">
+                            <li class="divider"></li>
+                            <li><a href="https://metroui.org.ua/easing.html">Easing functions</a></li>
+                            <li><a href="https://metroui.org.ua/requirejs.html">RequireJS</a></li>
+                            <li class="disabled"><a href="https://metroui.org.ua/precode.html">PreCode</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li data-flexorderorigin="2" data-flexorder="3">
+                <a href="#" class="dropdown-toggle">Templates</a>
+                <ul class="d-menu" data-role="dropdown" data-no-close="true">
+                    <li><a href="https://metroui.org.ua/templates/start-screen.html">Start screen</a></li>
+                    <li><a href="https://metroui.org.ua/templates/news-portal.html">News Portal</a></li>
+                    <li><a href="https://metroui.org.ua/templates/login.html">Login form</a></li>
+                    <li><a href="https://metroui.org.ua/templates/admin-sidebar-appbar.html">Admin with Sidebar</a></li>
+                </ul>
+            </li>
+
+            <li data-flexorderorigin="3" data-flexorder="4">
+                <a href="#" class="dropdown-toggle">Community</a>
+                <ul class="d-menu" data-role="dropdown" data-no-close="true">
+                    <li><a href="http://forum.metroui.org.ua/">Forum</a></li>
+                    <li><a href="https://github.com/olton/Metro-UI-CSS">Github</a></li>
+                    <li class="divider"></li>
+                    <li><a href="https://metroui.org.ua/license.html">License</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <span class="app-bar-pull"></span>
+
+    <div class="app-bar-pullbutton automatic" style="display: none;"></div><div class="clearfix" style="width: 0;"></div><nav class="app-bar-pullmenu hidden flexstyle-app-bar-menu" style="display: none;"><ul class="app-bar-pullmenubar hidden app-bar-menu"></ul></nav></div>
+</header>
+</div><div class="container page-content">
+        <h1><a href="https://metroui.org.ua/index.html" class="nav-button transform"><span></span></a>&nbsp;Audio player</h1>
+
+        <!-- Google adsense block -->
+<div style="margin: 10px 0"><ins class="adsbygoogle" style="display: block; height: 90px;" data-ad-client="ca-pub-1632668592742327" data-ad-slot="8347181909" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:960px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:960px;background-color:transparent;"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:960px;height:90px;" width="960" height="90" frameborder="0"></iframe></ins></ins></ins></div>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- End of gad block -->
+
+
+        <div class="example" data-text="example">
+            <h5>Default with one source</h5>
+            <div data-role="audio" data-list-position="bottom" class="audio-player full">
+                <audio>
+                    <source src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/rec.mp3" type="audio/mp3">
+                </audio>
+            <div class="controls"><button class="square-button control-element plist" style="display: none;"><span class="mif-list2"></span></button><button class="square-button control-element loop"><span class="mif-loop"></span></button><button class="square-button control-element play"><span class="mif-play"></span></button><button class="square-button control-element prev" style="display: none;"><span class="mif-backward"></span></button><button class="square-button control-element next" style="display: none;"><span class="mif-forward"></span></button><button class="square-button control-element random" style="display: none;"><span class="mif-dice"></span></button><button class="square-button control-element stop" disabled="disabled"><span class="mif-stop"></span></button><div class="control-element stream-wrapper"><div class="slider stream-slider"><div class="slider-backside"></div><div class="complete bg-cyan" style="width: 0px;"></div><div class="buffer" style="width: 0%;"></div><a class="marker bg-red" style="left: 0px;"></a><span class="slider-hint" style="left: -9px;">0</span></div></div><div class="control-element info-box">00:00 / 06:08</div><div class="place-right"><button class="square-button control-element volume"><span class="mif-volume-medium"></span></button><div class="control-element volume-wrapper"><div class="slider volume-slider"><div class="slider-backside"></div><div class="complete bg-green" style="width: 37px;"></div><div class="buffer" style="width: 0%;"></div><a class="marker bg-red" style="left: 37px;"></a><span class="slider-hint" style="left: 28px;">50</span></div></div></div></div></div>
+
+            <h5>Micro Mode</h5>
+            <div data-role="audio" data-mode="micro" class="audio-player micro">
+                <audio>
+                    <source src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/rec.mp3" type="audio/mp3">
+                </audio>
+            <div class="controls"><button class="square-button control-element plist" style="display: none;"><span class="mif-list2"></span></button><button class="square-button control-element loop"><span class="mif-loop"></span></button><button class="square-button control-element play"><span class="mif-play"></span></button><button class="square-button control-element prev" style="display: none;"><span class="mif-backward"></span></button><button class="square-button control-element next" style="display: none;"><span class="mif-forward"></span></button><button class="square-button control-element random" style="display: none;"><span class="mif-dice"></span></button><button class="square-button control-element stop" disabled="disabled"><span class="mif-stop"></span></button><div class="control-element stream-wrapper"><div class="slider stream-slider"><div class="slider-backside"></div><div class="complete bg-cyan" style="width: 0px;"></div><div class="buffer" style="width: 0%;"></div><a class="marker bg-red" style="left: 0px;"></a><span class="slider-hint" style="left: -8.8px;">0</span></div></div><div class="control-element info-box">00:00 / 06:08</div><div class="place-right"><button class="square-button control-element volume"><span class="mif-volume-medium"></span></button><div class="control-element volume-wrapper"><div class="slider volume-slider"><div class="slider-backside"></div><div class="complete bg-green" style="width: 0px;"></div><div class="buffer" style="width: 0%;"></div><a class="marker bg-red" style="left: -9px;"></a><span class="slider-hint" style="left: -17.8px;">50</span></div></div></div></div></div>
+
+            <h5>Small Mode</h5>
+            <div data-role="audio" data-mode="small" class="audio-player small">
+                <audio>
+                    <source src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/rec.mp3" type="audio/mp3">
+                </audio>
+            <div class="controls"><button class="square-button control-element plist" style="display: none;"><span class="mif-list2"></span></button><button class="square-button control-element loop"><span class="mif-loop"></span></button><button class="square-button control-element play"><span class="mif-play"></span></button><button class="square-button control-element prev" style="display: none;"><span class="mif-backward"></span></button><button class="square-button control-element next" style="display: none;"><span class="mif-forward"></span></button><button class="square-button control-element random" style="display: none;"><span class="mif-dice"></span></button><button class="square-button control-element stop" disabled="disabled"><span class="mif-stop"></span></button><div class="control-element stream-wrapper"><div class="slider stream-slider"><div class="slider-backside"></div><div class="complete bg-cyan" style="width: 0px;"></div><div class="buffer" style="width: 0%;"></div><a class="marker bg-red" style="left: 0px;"></a><span class="slider-hint" style="left: -8.8px;">0</span></div></div><div class="control-element info-box">00:00 / 00:00</div><div class="place-right"><button class="square-button control-element volume"><span class="mif-volume-medium"></span></button><div class="control-element volume-wrapper"><div class="slider volume-slider"><div class="slider-backside"></div><div class="complete bg-green" style="width: 37px;"></div><div class="buffer" style="width: 0%;"></div><a class="marker bg-red" style="left: 37px;"></a><span class="slider-hint" style="left: 28px;">50</span></div></div></div></div></div>
+
+            <h5>Medium Mode</h5>
+            <div data-role="audio" data-mode="medium" class="audio-player medium">
+                <audio>
+                    <source src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/rec.mp3" type="audio/mp3">
+                </audio>
+            <div class="controls"><button class="square-button control-element plist" style="display: none;"><span class="mif-list2"></span></button><button class="square-button control-element loop"><span class="mif-loop"></span></button><button class="square-button control-element play"><span class="mif-play"></span></button><button class="square-button control-element prev" style="display: none;"><span class="mif-backward"></span></button><button class="square-button control-element next" style="display: none;"><span class="mif-forward"></span></button><button class="square-button control-element random" style="display: none;"><span class="mif-dice"></span></button><button class="square-button control-element stop" disabled="disabled"><span class="mif-stop"></span></button><div class="control-element stream-wrapper"><div class="slider stream-slider"><div class="slider-backside"></div><div class="complete bg-cyan" style="width: 0px;"></div><div class="buffer" style="width: 0%;"></div><a class="marker bg-red" style="left: 0px;"></a><span class="slider-hint" style="left: -9px;">0</span></div></div><div class="control-element info-box">00:00 / 00:00</div><div class="place-right"><button class="square-button control-element volume"><span class="mif-volume-medium"></span></button><div class="control-element volume-wrapper"><div class="slider volume-slider"><div class="slider-backside"></div><div class="complete bg-green" style="width: 37px;"></div><div class="buffer" style="width: 0%;"></div><a class="marker bg-red" style="left: 37px;"></a><span class="slider-hint" style="left: 28px;">50</span></div></div></div></div></div>
+        </div>
+
+        <div class="example" data-text="example">
+            <h5>With a play list, full mode</h5>
+            <div data-role="audio" class="audio-player full">
+                <div class="play-list-wrapper">
+                    <h1 class="album-title">Scorpions - Return to Forever</h1>
+                    <ul class="play-list">
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/01  Going Out With A Bang.mp3" data-type="audio/mp3" class="current">Going Out With A Bang<div class="progress-bar small no-margin-top progress" style="display: block;"><div class="bar default" style="width: 0%;"></div></div></li>
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/02  We Built This House.mp3" data-type="audio/mp3">We Built This House<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li>
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/03  Rock My Car.mp3" data-type="audio/mp3">Rock My Car<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li>
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/04  House Of Cards.mp3" data-type="audio/mp3">House Of Cards<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li>
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/05  All For One.mp3" data-type="audio/mp3">All For One<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li>
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/06  Rock'N'Roll Band.mp3" data-type="audio/mp3">Rock'N'Roll Band<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li>
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/07  Catch Your Luck And Play.mp3" data-type="audio/mp3">Catch Your Luck And Play<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li>
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/08  Rollin' Home.mp3" data-type="audio/mp3">Rollin' Home<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li>
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/09  Hard Rockin' The Place.mp3" data-type="audio/mp3">Hard Rockin' The Place<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li>
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/10  Eye Of The Storm.mp3" data-type="audio/mp3">Eye Of The Storm<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li>
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/11  The Scratch.mp3" data-type="audio/mp3">The Scratch<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li>
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/12  Gypsy Life.mp3" data-type="audio/mp3">Gypsy Life<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li>
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/13  The World We Used To Know.mp3" data-type="audio/mp3">The World We Used To Know<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li>
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/14  Dancing With The Moonlight.mp3" data-type="audio/mp3">Dancing With The Moonlight<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li>
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/15  When The Truth Is A Lie.mp3" data-type="audio/mp3">When The Truth Is A Lie<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li>
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/16  Who We Are.mp3" data-type="audio/mp3">Who We Are<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li>
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/17  Crazy Ride.mp3" data-type="audio/mp3">Crazy Ride<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li>
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/18  One And One Is Three.mp3" data-type="audio/mp3">One And One Is Three<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li>
+                        <li data-src="http://metroui.org.ua/res/scorpions/return_to_forever/19  Delirious.mp3" data-type="audio/mp3">Delirious<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li>
+                    </ul>
+                </div>
+            <audio><source src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/01%2520%2520Going%2520Out%2520With%2520A%2520Bang.mp3" type="audio/mp3"></audio><div class="controls"><button class="square-button control-element plist"><span class="mif-list2"></span></button><button class="square-button control-element loop"><span class="mif-loop"></span></button><button class="square-button control-element play"><span class="mif-play"></span></button><button class="square-button control-element prev"><span class="mif-backward"></span></button><button class="square-button control-element next"><span class="mif-forward"></span></button><button class="square-button control-element random"><span class="mif-dice"></span></button><button class="square-button control-element stop" disabled="disabled"><span class="mif-stop"></span></button><div class="control-element stream-wrapper"><div class="slider stream-slider"><div class="slider-backside"></div><div class="complete bg-cyan" style="width: 0px;"></div><div class="buffer" style="width: 0%;"></div><a class="marker bg-red" style="left: 0px;"></a><span class="slider-hint" style="left: -9px;"></span></div></div><div class="control-element info-box">00:00 / 00:00</div><div class="place-right"><button class="square-button control-element volume"><span class="mif-volume-medium"></span></button><div class="control-element volume-wrapper"><div class="slider volume-slider"><div class="slider-backside"></div><div class="complete bg-green" style="width: 37px;"></div><div class="buffer" style="width: 0%;"></div><a class="marker bg-red" style="left: 37px;"></a><span class="slider-hint" style="left: 28px;">50</span></div></div></div></div></div>
+        </div>
+
+        <div class="example" data-text="example">
+            <h5>External play list, loaded by function</h5>
+            <div data-role="audio" data-play-list="playList" class="audio-player full"><div class="play-list-wrapper"><h1 class="album-title">Scorpions - Return to Forever</h1><div class="poster"><img src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/scorpions_poster.jpg"><div class="album-desc">German
+ heavy metal icons the Scorpions hit the 50-year mark in 2015, being 
+initially conceived all the way back in 1965 by a 16-year-old Rudolf 
+Schenker as a beat band very much in line with the trends of the time, 
+and slowly evolving into a hard rock force to contend with by the end of
+ the '70s.</div></div><ul class="play-list"><li class="current">01  Going Out With A Bang.mp3<div class="progress-bar small no-margin-top progress" style="display: block;"><div class="bar default" style="width: 0%;"></div></div></li><li>02  We Built This House.mp3<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li><li>03  Rock My Car.mp3<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li><li>04  House Of Cards.mp3<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li><li>05  All For One.mp3<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li><li>06  Rock'N'Roll Band.mp3<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li><li>07  Catch Your Luck And Play.mp3<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li><li>08  Rollin' Home.mp3<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li><li>09  Hard Rockin' The Place.mp3<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li><li>10  Eye Of The Storm.mp3<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li><li>11  The Scratch.mp3<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li><li>12  Gypsy Life.mp3<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li><li>13  The World We Used To Know.mp3<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li><li>14  Dancing With The Moonlight.mp3<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li><li>15  When The Truth Is A Lie.mp3<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li><li>16  Who We Are.mp3<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li><li>17  Crazy Ride.mp3<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li><li>18  One And One Is Three.mp3<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li><li>19  Delirious.mp3<div class="progress-bar small no-margin-top progress" style="display: none;"><div class="bar default" style="width: 0%;"></div></div></li></ul></div><audio><source src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/01%2520%2520Going%2520Out%2520With%2520A%2520Bang.mp3"></audio><div class="controls"><button class="square-button control-element plist"><span class="mif-list2"></span></button><button class="square-button control-element loop"><span class="mif-loop"></span></button><button class="square-button control-element play"><span class="mif-play"></span></button><button class="square-button control-element prev"><span class="mif-backward"></span></button><button class="square-button control-element next"><span class="mif-forward"></span></button><button class="square-button control-element random"><span class="mif-dice"></span></button><button class="square-button control-element stop" disabled="disabled"><span class="mif-stop"></span></button><div class="control-element stream-wrapper"><div class="slider stream-slider"><div class="slider-backside"></div><div class="complete bg-cyan" style="width: 0px;"></div><div class="buffer" style="width: 0%;"></div><a class="marker bg-red" style="left: 0px;"></a><span class="slider-hint" style="left: -9px;"></span></div></div><div class="control-element info-box">00:00 / 00:00</div><div class="place-right"><button class="square-button control-element volume"><span class="mif-volume-medium"></span></button><div class="control-element volume-wrapper"><div class="slider volume-slider"><div class="slider-backside"></div><div class="complete bg-green" style="width: 37px;"></div><div class="buffer" style="width: 0%;"></div><a class="marker bg-red" style="left: 37px;"></a><span class="slider-hint" style="left: 28px;">50</span></div></div></div></div></div>
+        </div>
+
+        <div class="example" data-text="code">
+            <pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"audio"</span><span class="tag">&gt;</span></code></li><li class="L1"><code><span class="pln">    </span><span class="tag">&lt;audio&gt;</span></code></li><li class="L2"><code><span class="pln">        </span><span class="tag">&lt;source</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://metroui.org.ua/res/rec.mp3"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">'audio/mp3'</span><span class="pln"> </span><span class="tag">/&gt;</span></code></li><li class="L3"><code><span class="pln">    </span><span class="tag">&lt;/audio&gt;</span></code></li><li class="L4"><code><span class="tag">&lt;/div&gt;</span></code></li></ol></pre>
+        </div>
+
+    </div><div><footer style="background-color: #EFEAE3">
+    <div class="bg-steel no-tablet-portrait no-phone">
+        <div class="container padding20 fg-white">
+            <div class="carousel bg-transparent" data-role="carousel" data-controls="false" data-markers="false" data-effect="fade" data-height="200" style="width: 100%; height: 200px;">
+                <!--<div class="slide fg-white">-->
+                <!--<div class="place-left" style="margin-right: 20px">-->
+                <!--<img src="images/css-logo.png" style="height: 200px">-->
+                <!--</div>-->
+                <!--<h1>Developed with advice</h1>-->
+                <!--<p>Metro UI CSS developed with the advice of Microsoft to build the user interface and include: general styles, grid, layouts, typography, 20+ components, 300+ built-in icons.</p>-->
+                <!--<p>Metro UI CSS build with {LESS}. Metro UI CSS is open source and has MIT licensing model.</p>-->
+                <!--</div>-->
+
+                <!--<div class="slide fg-white">-->
+                <!--<div class="place-left" style="margin-right: 20px">-->
+                <!--<img src="images/bizspark_b_2.png" style="height: 200px">-->
+                <!--</div>-->
+                <!--<h1>BizSpark Startup</h1>-->
+                <!--<p>Metro UI CSS is a BizSpark Startup. Microsoft BizSpark is a global program that helps software startups succeed by giving them access to software development tools, connecting them with key industry players, and providing marketing visibility.</p>-->
+                <!--<p>BizSpark provides free software, support, and visibility to help startups succeed. Join BizSpark and become part of a global community that has over 50,000 members in 100+ countries.</p>-->
+                <!--<a class="button primary" href="http://bizspark.com">Join the BizSpark Program now</a>-->
+                <!--</div>-->
+
+                <div class="slide fg-white">
+                    <div class="place-left" style="margin-right: 20px">
+                        <img src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/icon_PhpStorm.svg" style="height: 200px">
+                    </div>
+                    <h1>Thanks to JetBrains</h1>
+                    <p>This Project was created in the best IDE - 
+PhpStorm. Thanks to the company JetBrains for supporting the project in 
+the form of a license for a great product PhpStorm.</p>
+                    <a class="button success" href="http://www.jetbrains.com/phpstorm/">Get PhpStorm now!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="padding20">
+            <div class="grid">
+
+                <div class="row cells2">
+                    <div class="cell">
+                        <div class="row cells4">
+                            <div class="cell">
+                                
+                            <div class="image-container bordered image-format-square" style="width: 100%;"><div class="frame"><div style="width: 100%; height: 105px; background-image: url(&quot;images/spface2.jpg&quot;); background-size: cover; background-repeat: no-repeat; border-radius: 0px;"></div></div></div></div>
+                            <div class="cell colspan3 padding20 no-padding-top no-padding-bottom">
+                                <h1>Founder, author:</h1>
+                                <p class="text-secondary">
+                                    Hi! My name Sergey Pimenov and i'm author of Metro UI CSS from Kiev, Ukraine.
+                                </p>
+                                <div>
+                                    <span class="tag info">SKILLS:</span>
+                                    <span class="tag success">PHP</span>
+                                    <span class="tag success">CSS</span>
+                                    <span class="tag success">LESS</span>
+                                    <span class="tag success">HTML</span>
+                                    <span class="tag success">JavaScript</span>
+                                    <span class="tag success">jQuery</span>
+                                    <span class="tag success">MySQL</span>
+                                    <span class="tag success">Git</span>
+                                </div>
+                                <br>
+                                <div class="bg-white bg-red fg-white padding10 align-center no-display" id="job">
+                                    Open for job offer from EU, Canada, or USA (moving).
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="row cells4">
+                            <div class="cell">
+                                
+                            <div class="image-container bordered image-format-square" style="width: 100%;"><div class="frame"><div style="width: 100%; height: 105px; background-image: url(&quot;images/zadorozhnyi.jpg&quot;); background-size: cover; background-repeat: no-repeat; border-radius: 0px;"></div></div></div></div>
+                            <div class="cell colspan3 padding20 no-padding-top no-padding-bottom">
+                                <h3>Co-Founder:</h3>
+                                <p class="text-secondary">
+                                    Oleksander (Aleksandr) Zadorozhnyi - primary investments.
+                                </p>
+                                <div>
+                                    <span class="tag info">SKILLS:</span>
+                                    <span class="tag success">PHP</span>
+                                    <span class="tag success">VoIP</span>
+                                    <span class="tag success">TCP/IP</span>
+                                    <span class="tag success">SIP</span>
+                                    <span class="tag success">IPTV</span>
+                                    <span class="tag success">QoS</span>
+                                    <span class="tag success">Linux</span>
+                                    <span class="tag success">Start-ups</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <hr class="thin" style="margin-top: 20px">
+                        <a href="https://www.jetbrains.com/phpstorm/" title="license for PhpStorm"><img src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/logo_JetBrains_4.png" style="width: 100px"></a>
+                        <a href="http://www.microsoft.com/bizspark/default.aspx" title="Bizspark Startup"><img src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/MSFT_logo_png.png" style="width: 100px"></a>
+                        <a href="https://www.keycdn.com/" title="KeyCDN"><img src="Audio%20Player%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/keycdn-logo.svg" style="width: 100px"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="padding20">
+            <!-- Google adsense block -->
+<div style="margin: 10px 0"><ins class="adsbygoogle" style="display: block; height: 90px;" data-ad-client="ca-pub-1632668592742327" data-ad-slot="8347181909" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:916px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:916px;background-color:transparent;"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:916px;height:90px;" width="916" height="90" frameborder="0"></iframe></ins></ins></ins></div>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- End of gad block -->
+
+        </div>
+
+        <div class="align-center padding20 text-small">
+            Copyright 2012-2016 <a href="http://pimenov.com.ua/">Sergey Pimenov</a>
+        </div>
+    </div>
+</footer>
+</div>
+
+<iframe id="google_osd_static_frame_8923959042441" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body></html>

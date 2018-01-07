@@ -1,0 +1,106 @@
+body, html{
+	padding: 0;
+	margin: 0;
+}
+
+svg{
+	width: 100%;
+}
+
+img {
+    -webkit-backface-visibility: hidden; 
+    -ms-transform: translateZ(0); /* IE 9 */
+    -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+    transform: translateZ(0);
+    image-rendering: pixelated;
+}
+
+#main {
+	width:728px; 
+	height:90px; 
+	background:#fff;
+	position:relative; 
+	overflow:hidden; 
+	display:none;
+	box-sizing:border-box; 
+	border:1px solid #000;
+	cursor: pointer;
+}
+#main *{
+	position:absolute;
+}
+
+.bg {
+	top: 0;
+	left: 0;
+}
+
+.corners {
+	width: 728px;
+	height: 90px;
+}
+
+.slant1 {
+	width: 23px;
+	height: 136px;
+}
+
+.slant2 {
+	width: 23px;
+	height: 136px;
+	bottom: 0;
+	right: 0;
+}
+
+.cta{
+    background-color: #ffffff;
+    border-radius: 11px;
+    top: 31px;
+    left: 337px;
+    width: 130px;
+    height: 28px;
+}
+
+#cta-text{
+	width: 95px;
+	top: 4px;
+	left: 17px;
+}
+
+.gradient{
+	width: 728px;
+	height: 90px;
+	background: -moz-linear-gradient(-45deg,  rgba(252,252,252,0.4) 0%, rgba(108,108,108,0) 57%, rgba(0,0,0,0) 100%);
+	background: -webkit-linear-gradient(-45deg,  rgba(252,252,252,0.4) 0%,rgba(108,108,108,0) 57%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(135deg,  rgba(252,252,252,0.4) 0%,rgba(108,108,108,0) 57%,rgba(0,0,0,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66fcfcfc', endColorstr='#00000000',GradientType=1 );
+}
+
+.blue{
+	width: 728px;
+	height: 90px;
+	background: #009cde;
+	opacity: 0.9;
+}
+
+.gfx{}
+
+
+.sprite { background: url('sprite.png') no-repeat top left;  } 
+.sprite.txt1 { background-position: 0 0; width: 281px; height: 61px; } 
+.sprite.txt2 { background-position: -291px 0; width: 255px; height: 65px; } 
+.sprite.txt3 { background-position: -556px 0; width: 302px; height: 66px; } 
+.sprite.gfx {background-position: -868px 0;width: 154px;height: 91px;top: 1px;left: 500px;} 
+.sprite.hashtag { background-position: -1032px 0; width: 142px; height: 37px; } 
+.sprite.logo { background-position: -1184px 0; width: 87px; height: 27px; } 
+
+.sprite.txt1 {top: 18px;left: 16px;} 
+.sprite.txt2 {top: 13px;left: 240px;} 
+.sprite.txt3 {top: 11px;left: 15px;} 
+.sprite.rebate {top: 39px;left: 550px;} 
+.sprite.hashtag {top: 41px;left: 303px;} 
+.sprite.logo {bottom: -2px;right: 16px;} 
+.sprite.hand {top: -12px;left: 406px;} 
+.sprite.board {top: 21px;right: 157px;} 
+
+

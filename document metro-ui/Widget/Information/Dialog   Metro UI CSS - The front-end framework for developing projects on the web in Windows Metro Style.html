@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html><head lang="en">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Metro, a sleek, intuitive, and powerful framework for faster and easier web development for Windows Metro Style.">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, metro, front-end, frontend, web development">
+    <meta name="author" content="Sergey Pimenov and Metro UI CSS contributors">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://metroui.org.ua/favicon.ico">
+    <title>Dialog :: Metro UI CSS - The front-end framework for developing projects on the web in Windows Metro Style</title>
+
+    <link href="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/metro.css" rel="stylesheet">
+    <link href="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/metro-icons.css" rel="stylesheet">
+    <link href="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/metro-responsive.css" rel="stylesheet">
+    <link href="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/metro-schemes.css" rel="stylesheet">
+    <link href="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/metro-colors.css" rel="stylesheet">
+
+    <link href="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/docs.css" rel="stylesheet">
+
+    <script src="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/ca-pub-1632668592742327.js"></script><script async="" src="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/analytics.js"></script><script src="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/jquery-2.js"></script>
+    <script src="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/metro.js"></script>
+    <script src="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/docs.js"></script>
+    <link rel="stylesheet" type="text/css" href="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/prettify.css">
+    <script src="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/ga.js"></script>
+    <script async="" src="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/adsbygoogle.js"></script>
+
+<link rel="preload" href="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/integrator.js" as="script"><script type="text/javascript" src="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/integrator.js"></script><link rel="preload" href="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/integrator_002.js" as="script"><script type="text/javascript" src="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/integrator_002.js"></script></head>
+<body>
+    <div><header class="app-bar fixed-top navy" data-role="appbar">
+    <div class="container">
+        <a href="https://metroui.org.ua/" class="app-bar-element branding"><img src="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/wn8.png" style="height: 28px; display: inline-block; margin-right: 10px;"> Metro UI CSS</a>
+
+        <ul class="app-bar-menu small-dropdown">
+            <li data-flexorderorigin="0" data-flexorder="1">
+                <a href="#" class="dropdown-toggle">Base CSS</a>
+                <ul class="d-menu" data-role="dropdown" data-no-close="true">
+                    <li class="disabled"><a href="https://metroui.org.ua/overview.html">Overview</a></li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="" class="dropdown-toggle">Grid system</a>
+                        <ul class="d-menu" data-role="dropdown">
+                            <li><a href="https://metroui.org.ua/grid.html">Simple grid</a></li>
+                            <li><a href="https://metroui.org.ua/flexgrid.html">Flex grid</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://metroui.org.ua/typography.html">Typography</a></li>
+                    <li><a href="https://metroui.org.ua/tables.html">Tables</a></li>
+                    <li><a href="https://metroui.org.ua/inputs.html">Forms &amp; Inputs</a></li>
+                    <li><a href="https://metroui.org.ua/buttons.html">Buttons</a></li>
+                    <li><a href="https://metroui.org.ua/images.html">Images</a></li>
+                    <li><a href="https://metroui.org.ua/font.html">Metro Icon Font</a></li>
+                    <li class="divider"></li>
+                    <li><a href="https://metroui.org.ua/colors.html">Colors</a></li>
+                    <li><a href="https://metroui.org.ua/helpers.html">Helpers classes</a></li>
+                    <li class="divider"></li>
+                    <li><a href="https://metroui.org.ua/rtl.html">RTL Support</a></li>
+                    <li class="disabled"><a href="https://metroui.org.ua/responsive.html">Responsive</a></li>
+                </ul>
+            </li>
+            <li data-flexorderorigin="1" data-flexorder="2" class="active-container">
+                <a href="#" class="dropdown-toggle active-toggle">Widgets</a>
+                <ul class="d-menu" data-role="dropdown" data-no-close="true" style="display: block;">
+                    <li>
+                        <a href="#" class="dropdown-toggle">Menus</a>
+                        <ul class="d-menu" data-role="dropdown" data-no-close="true">
+                            <li><a href="https://metroui.org.ua/appbar.html">Application bar</a></li>
+                            <li><a href="https://metroui.org.ua/menu.html">Menus</a></li>
+                            <li><a href="https://metroui.org.ua/fluent-menu.html">Fluent menu</a></li>
+                            <li><a href="https://metroui.org.ua/sidebar.html">Sidebar</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Controls</a>
+                        <ul class="d-menu" data-role="dropdown" data-no-close="true">
+                            <li><a href="https://metroui.org.ua/accordion.html">Accordion</a></li>
+                            <li><a href="https://metroui.org.ua/button-groups.html">Button groups</a></li>
+                            <li><a href="https://metroui.org.ua/keypad.html">Keypad</a></li>
+                            <li><a href="https://metroui.org.ua/tabcontrol.html">Tab Control</a></li>
+                            <li><a href="https://metroui.org.ua/treeview.html">TreeView</a></li>
+                            <li><a href="https://metroui.org.ua/listview.html">ListView</a></li>
+                            <li><a href="https://metroui.org.ua/sliders.html">Slider</a></li>
+                            <li><a href="https://metroui.org.ua/stepper.html">Stepper</a></li>
+                            <li><a href="https://metroui.org.ua/wizard.html">Wizard</a></li>
+                            <li><a href="https://metroui.org.ua/wizard2.html">Wizard2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Visualization</a>
+                        <ul class="d-menu" data-role="dropdown" data-no-close="true">
+                            <li><a href="https://metroui.org.ua/tiles.html">Tiles</a></li>
+                            <li><a href="https://metroui.org.ua/carousel.html">Carousel</a></li>
+                            <li class="no-display"><a href="https://metroui.org.ua/windows.html">Windows</a></li>
+                            <li><a href="https://metroui.org.ua/popovers.html">Popovers</a></li>
+                            <li><a href="https://metroui.org.ua/progressbar.html">Progress Bar</a></li>
+                            <li><a href="https://metroui.org.ua/panels.html">Panels</a></li>
+                            <li><a href="https://metroui.org.ua/rating.html">Rating</a></li>
+                            <li><a href="https://metroui.org.ua/preloaders.html">Preloaders</a></li>
+                            <li><a href="https://metroui.org.ua/hints.html">Hints</a></li>
+                            <li><a href="https://metroui.org.ua/streamer.html">Streamer</a></li>
+                            <li><a href="https://metroui.org.ua/presenter.html">Presenter</a></li>
+                            <li><a href="https://metroui.org.ua/donut.html">Donut Chart</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Information</a>
+                        <ul class="d-menu" data-role="dropdown" data-no-close="true">
+                            <li><a href="https://metroui.org.ua/notify.html">Notify system</a></li>
+                            <li><a href="https://metroui.org.ua/dialog.html">Dialogs</a></li>
+                            <li><a href="https://metroui.org.ua/windows.html">Window</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Date &amp; Time</a>
+                        <ul class="d-menu" data-role="dropdown" data-no-close="true">
+                            <li><a href="https://metroui.org.ua/calendar.html">Calendar</a></li>
+                            <li><a href="https://metroui.org.ua/datepicker.html">Datepicker</a></li>
+                            <li><a href="https://metroui.org.ua/countdown.html">Countdown</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Media</a>
+                        <ul class="d-menu" data-role="dropdown">
+                            <li><a href="https://metroui.org.ua/video-player.html">Video player</a></li>
+                            <li><a href="https://metroui.org.ua/audio-player.html">Audio player</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Tools</a>
+                        <ul class="d-menu" data-role="dropdown">
+                            <li><a href="https://metroui.org.ua/validator.html">Form Validator</a></li>
+                            <li><a href="https://metroui.org.ua/draggable.html">Draggable</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://metroui.org.ua/charms.html">Charms</a></li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Events &amp; Hotkeys</a>
+                        <ul class="d-menu" data-role="dropdown">
+                            <li><a href="https://metroui.org.ua/events.html">Event binding</a></li>
+                            <li><a href="https://metroui.org.ua/hotkeys.html">Hotkey binding</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Third-party</a>
+                        <ul class="d-menu" data-role="dropdown" data-no-close="true">
+                            <li><a href="https://metroui.org.ua/select2.html">Select2</a></li>
+                            <li><a href="https://metroui.org.ua/datatables.html">DataTables</a></li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Utils</a>
+                        <ul class="d-menu" data-role="dropdown">
+                            <li class="divider"></li>
+                            <li><a href="https://metroui.org.ua/easing.html">Easing functions</a></li>
+                            <li><a href="https://metroui.org.ua/requirejs.html">RequireJS</a></li>
+                            <li class="disabled"><a href="https://metroui.org.ua/precode.html">PreCode</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li data-flexorderorigin="2" data-flexorder="3">
+                <a href="#" class="dropdown-toggle">Templates</a>
+                <ul class="d-menu" data-role="dropdown" data-no-close="true">
+                    <li><a href="https://metroui.org.ua/templates/start-screen.html">Start screen</a></li>
+                    <li><a href="https://metroui.org.ua/templates/news-portal.html">News Portal</a></li>
+                    <li><a href="https://metroui.org.ua/templates/login.html">Login form</a></li>
+                    <li><a href="https://metroui.org.ua/templates/admin-sidebar-appbar.html">Admin with Sidebar</a></li>
+                </ul>
+            </li>
+
+            <li data-flexorderorigin="3" data-flexorder="4">
+                <a href="#" class="dropdown-toggle">Community</a>
+                <ul class="d-menu" data-role="dropdown" data-no-close="true">
+                    <li><a href="http://forum.metroui.org.ua/">Forum</a></li>
+                    <li><a href="https://github.com/olton/Metro-UI-CSS">Github</a></li>
+                    <li class="divider"></li>
+                    <li><a href="https://metroui.org.ua/license.html">License</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <span class="app-bar-pull"></span>
+
+    <div class="app-bar-pullbutton automatic" style="display: none;"></div><div class="clearfix" style="width: 0;"></div><nav class="app-bar-pullmenu hidden flexstyle-app-bar-menu" style="display: none;"><ul class="app-bar-pullmenubar hidden app-bar-menu"></ul></nav></div>
+</header>
+</div><div class="container page-content">
+        <h1><a href="https://metroui.org.ua/index.html" class="nav-button transform"><span></span></a>&nbsp;Dialog</h1>
+
+        <!-- Google adsense block -->
+<div style="margin: 10px 0"><ins class="adsbygoogle" style="display: block; height: 90px;" data-ad-client="ca-pub-1632668592742327" data-ad-slot="8347181909" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:960px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:960px;background-color:transparent;"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:960px;height:90px;" width="960" height="90" frameborder="0"></iframe></ins></ins></ins></div>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- End of gad block -->
+
+
+        <div class="margin20 no-margin-left no-margin-right sub-header text-light">
+            Metro UI CSS provides the ability to easily create dialogs. 
+The dialogue can be ANY Your unit, it is sufficient to determine the 
+appropriate role <span class="tag">data-role='dialog'</span>.
+        </div>
+
+        <div class="padding20 no-padding-right no-padding-left no-padding-top">
+            <button class="button" onclick="metroDialog.toggle('#dialog')">Show dialog</button>
+            <button class="button" onclick="metroDialog.toggle('#dialog2')">Show dialog2</button>
+            <button class="button success" onclick="metroDialog.toggle('#dialog3')">Success</button>
+            <button class="button warning" onclick="metroDialog.toggle('#dialog4')">Warning</button>
+            <button class="button alert" onclick="metroDialog.toggle('#dialog5')">Alert</button>
+            <button class="button info" onclick="metroDialog.toggle('#dialog6')">Info</button>
+            <button class="button" onclick="metroDialog.toggle('#dialog10')">Custom colors</button>
+            <button class="button" onclick="metroDialog.toggle('#dialog7')">Windows Style</button>
+            <button class="button" onclick="metroDialog.toggle('#dialog8')">Overlay</button>
+            <button class="button" onclick="metroDialog.toggle('#dialog9')">Overlay 2</button>
+        </div>
+
+        <div class="example" data-text="code">
+            <pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"dialog"</span><span class="tag">&gt;</span></code></li><li class="L1"><code><span class="pln">    ...you content here...</span></code></li><li class="L2"><code><span class="tag">&lt;/div&gt;</span></code></li></ol></pre>
+        </div>
+
+        <div class="example" data-text="example">
+            <h5>Example of usage</h5>
+            <pre class="prettyprint linenums prettyprinted" style=""><ol class="linenums"><li class="L0"><code><span class="typ">Over</span><span class="pln"> data</span><span class="pun">-</span><span class="pln">attribute</span></code></li><li class="L1"><code><span class="pun">&lt;</span><span class="pln">div data</span><span class="pun">-</span><span class="pln">role</span><span class="pun">=</span><span class="str">"dialog"</span><span class="pln"> id</span><span class="pun">=</span><span class="str">"dialog"</span><span class="pun">&gt;</span></code></li><li class="L2"><code><span class="pln">    </span><span class="str">&lt;h1&gt;</span><span class="typ">Simple</span><span class="pln"> dialog</span><span class="pun">&lt;/</span><span class="pln">h1</span><span class="pun">&gt;</span></code></li><li class="L3"><code><span class="pln">    </span><span class="str">&lt;p&gt;</span></code></li><li class="L4"><code><span class="pln">        </span><span class="typ">Dialog</span><span class="pln"> </span><span class="pun">::</span><span class="pln"> </span><span class="typ">Metro</span><span class="pln"> UI CSS </span><span class="pun">-</span><span class="pln"> </span><span class="typ">The</span><span class="pln"> front</span><span class="pun">-</span><span class="kwd">end</span><span class="pln"> framework</span></code></li><li class="L5"><code><span class="pln">        </span><span class="kwd">for</span><span class="pln"> developing projects on the web </span><span class="kwd">in</span><span class="pln"> </span><span class="typ">Windows</span><span class="pln"> </span><span class="typ">Metro</span><span class="pln"> </span><span class="typ">Style</span><span class="pun">.</span></code></li><li class="L6"><code><span class="pln">    </span><span class="pun">&lt;/</span><span class="pln">p</span><span class="pun">&gt;</span></code></li><li class="L7"><code><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span></code></li><li class="L8"><code></code></li><li class="L9"><code><span class="typ">Manual</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> js</span></code></li><li class="L0"><code><span class="pun">&lt;</span><span class="pln">button onclick</span><span class="pun">=</span><span class="str">"metroDialog.open('#dialog')"</span><span class="pun">&gt;</span><span class="typ">Show</span><span class="pln"> dialog</span><span class="pun">&lt;/</span><span class="pln">button</span><span class="pun">&gt;</span></code></li></ol></pre>
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        <h3>Options</h3>
+        <table class="table bordered border">
+            <thead>
+            <tr>
+                <td>Parameter</td>
+                <td>Data-*</td>
+                <td>Type</td>
+                <td>Default value</td>
+                <td>Description</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>overlay</td>
+                <td style="white-space: nowrap">data-overlay</td>
+                <td>boolean</td>
+                <td>false</td>
+                <td>Show dialog with overlay</td>
+            </tr>
+            <tr>
+                <td>overlayClickClose</td>
+                <td style="white-space: nowrap">data-overlay-click-close</td>
+                <td>boolean</td>
+                <td>false</td>
+                <td>Close dialog on overlay click</td>
+            </tr>
+            <tr>
+                <td>overlayColor</td>
+                <td style="white-space: nowrap">data-overlay-color</td>
+                <td>string</td>
+                <td>default</td>
+                <td>Overlay color, hex value or class name</td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td style="white-space: nowrap">data-type</td>
+                <td>string</td>
+                <td>default</td>
+                <td>Dialog type: default, success, warning, alert, info</td>
+            </tr>
+            <tr>
+                <td>background</td>
+                <td style="white-space: nowrap">data-background</td>
+                <td>string</td>
+                <td>default</td>
+                <td>Dialog background color, hex value or class name</td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td style="white-space: nowrap">data-color</td>
+                <td>string</td>
+                <td>default</td>
+                <td>Dialog main color for text, hex value or class name</td>
+            </tr>
+            <tr>
+                <td>hide</td>
+                <td style="white-space: nowrap">data-hide</td>
+                <td>int</td>
+                <td>false</td>
+                <td>If value gt 0 then dialog hide automatically after N ms</td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td style="white-space: nowrap">data-width</td>
+                <td>int or string</td>
+                <td>auto</td>
+                <td>Dialog width</td>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td style="white-space: nowrap">data-height</td>
+                <td>int or string</td>
+                <td>auto</td>
+                <td>Dialog height</td>
+            </tr>
+            <tr>
+                <td>show</td>
+                <td style="white-space: nowrap">data-show</td>
+                <td>boolean</td>
+                <td>false</td>
+                <td>Auto open Dialog after create</td>
+            </tr>
+            <tr>
+                <td>closeButton</td>
+                <td style="white-space: nowrap">data-close-button</td>
+                <td>boolean</td>
+                <td>false</td>
+                <td>Show dialog close button</td>
+            </tr>
+            <tr>
+                <td>windowsStyle</td>
+                <td style="white-space: nowrap">data-windows-style</td>
+                <td>boolean</td>
+                <td>false</td>
+                <td>Show dialog in windows 8 style (full width). Recommended put content in additional <span class="tag">div</span> with class <span class="tag">.container</span></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h3 id="_dialog-ajax_">Dialog content loaded with ajax</h3>
+        <div class="example">
+            
+            
+
+            <button class="button" onclick="metroDialog.toggle('#dialog-ajax')">Ajax demo</button>
+            <button class="button" onclick="metroDialog.toggle('#dialog-video-content')">Video content demo</button>
+
+            <pre class="prettyprint linenums no-scroll-x prettyprinted" style=""><ol class="linenums"><li class="L0"><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"dialog"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"dialog-ajax"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"padding20"</span></code></li><li class="L1"><code><span class="pln">    </span><span class="atn">data-close-button</span><span class="pun">=</span><span class="atv">"true"</span></code></li><li class="L2"><code><span class="pln">    </span><span class="atn">data-href</span><span class="pun">=</span><span class="atv">"dialog-ajax-demo-data.html"</span></code></li><li class="L3"><code><span class="pln">    </span><span class="atn">data-width</span><span class="pun">=</span><span class="atv">"600"</span><span class="tag">&gt;&lt;/div&gt;</span></code></li><li class="L4"><code></code></li><li class="L5"><code><span class="pln">&lt;div data-role="dialog" id="dialog-video-content"</span></code></li><li class="L6"><code><span class="pln">    data-background="bg-dark"</span></code></li><li class="L7"><code><span class="pln">    data-close-button="true"</span></code></li><li class="L8"><code><span class="pln">    data-content='</span><span class="tag">&lt;iframe</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"https://player.vimeo.com/video/86430443"</span><span class="tag">&gt;&lt;/iframe&gt;</span><span class="pln">'</span></code></li><li class="L9"><code><span class="pln">    data-width="600"</span></code></li><li class="L0"><code><span class="pln">    data-content-type="video"&gt;</span><span class="tag">&lt;/div&gt;</span></code></li></ol></pre>
+
+        </div>
+
+        <h3>Dialog place with attribute data-place</h3>
+        <div class="example">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <button class="button bg-grayLighter" onclick="metroDialog.toggle('#dialog-place-default')">default</button>
+            <button class="button bg-grayLighter" onclick="metroDialog.toggle('#dialog-place-top-left')">top-left</button>
+            <button class="button bg-grayLighter" onclick="metroDialog.toggle('#dialog-place-top-center')">top-center</button>
+            <button class="button bg-grayLighter" onclick="metroDialog.toggle('#dialog-place-top-right')">top-right</button>
+            <button class="button bg-grayLighter" onclick="metroDialog.toggle('#dialog-place-bottom-left')">bottom-left</button>
+            <button class="button bg-grayLighter" onclick="metroDialog.toggle('#dialog-place-bottom-center')">bottom-center</button>
+            <button class="button bg-grayLighter" onclick="metroDialog.toggle('#dialog-place-bottom-right')">bottom-right</button>
+            <button class="button bg-grayLighter" onclick="metroDialog.toggle('#dialog-place-center-left')">center-left</button>
+            <button class="button bg-grayLighter" onclick="metroDialog.toggle('#dialog-place-center-right')">center-right</button>
+        </div>
+
+        <h3>Utility functions</h3>
+        <p>
+            Metro UI CSS provides global utility function for open, close and toggle dialogs.
+        </p>
+        <ul>
+            <li>Open dialog - metroDialog.open(el [, place])</li>
+            <li>Close dialog - metroDialog.close(el)</li>
+            <li>Toggle dialog - metroDialog.toggle(el [, place])</li>
+        </ul>
+        <div class="example">
+            
+
+            <button class="button" onclick="metroDialog.open('#dialog-uf-1')">Open dialog</button>
+            <button class="button" onclick="metroDialog.close('#dialog-uf-1')">Close dialog</button>
+            <button class="button" onclick="metroDialog.toggle('#dialog-uf-1')">Toggle dialog</button>
+            <button class="button" onclick="metroDialog.toggle('#dialog-uf-1', 'top-left')">Open dialog top-left</button>
+            <button class="button" onclick="metroDialog.open('#dialog-uf-1', 'default', 'This is a new runtime content')">Open dialog, set content</button>
+            <button class="button" onclick="metroDialog.open('#dialog-uf-1', 'default', ($('<div>').addClass('padding20').html('hi! i am jquery content for dialog ')))">Open dialog, set content as jQuery object</button>
+
+            <pre class="prettyprint linenums no-scroll-x prettyprinted" style=""><ol class="linenums"><li class="L0"><code><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">onclick</span><span class="pun">=</span><span class="atv">"</span><span class="pln">metroDialog</span><span class="pun">.</span><span class="pln">open</span><span class="pun">(</span><span class="str">'#dialog-uf-1'</span><span class="pun">)</span><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">Open dialog</span><span class="tag">&lt;/button&gt;</span></code></li><li class="L1"><code><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">onclick</span><span class="pun">=</span><span class="atv">"</span><span class="pln">metroDialog</span><span class="pun">.</span><span class="pln">close</span><span class="pun">(</span><span class="str">'#dialog-uf-1'</span><span class="pun">)</span><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">Close dialog</span><span class="tag">&lt;/button&gt;</span></code></li><li class="L2"><code><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">onclick</span><span class="pun">=</span><span class="atv">"</span><span class="pln">metroDialog</span><span class="pun">.</span><span class="pln">toggle</span><span class="pun">(</span><span class="str">'#dialog-uf-1'</span><span class="pun">)</span><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">Toggle dialog</span><span class="tag">&lt;/button&gt;</span></code></li><li class="L3"><code><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">onclick</span><span class="pun">=</span><span class="atv">"</span><span class="pln">metroDialog</span><span class="pun">.</span><span class="pln">toggle</span><span class="pun">(</span><span class="str">'#dialog-uf-1'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'top-left'</span><span class="pun">)</span><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">Toggle dialog</span><span class="tag">&lt;/button&gt;</span></code></li><li class="L4"><code><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">onclick</span><span class="pun">=</span><span class="atv">"</span><span class="pln">metroDialog</span><span class="pun">.</span><span class="pln">open</span><span class="pun">(</span><span class="str">'#dialog-uf-1'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'top-left'</span><span class="pun">)</span><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">Show dialog</span><span class="tag">&lt;/button&gt;</span></code></li></ol></pre>
+        </div>
+
+        <h3>$.Dialog</h3>
+        <div class="example">
+            <button class="button bg-orange fg-white" onclick="openCustom()">Create dialog with $.Dialog</button>
+        </div>
+        <script>
+            function openCustom(){
+                metroDialog.create({
+                    title: "Dialog title",
+                    content: "This is a dialog content",
+                    actions: [
+                        {
+                            title: "Ok",
+                            onclick: function(el){
+                                //console.log(el);
+                                $(el).data('dialog').close();
+                            }
+                        },
+                        {
+                            title: "Cancel",
+                            cls: "js-dialog-close"
+                        }
+                    ],
+                    options: {
+                    }
+                });
+            }
+        </script>
+
+        <pre class="prettyprint linenums no-scroll-x prettyprinted" style=""><ol class="linenums"><li class="L0"><code><span class="pln">metroDialog</span><span class="pun">.</span><span class="pln">create</span><span class="pun">({</span></code></li><li class="L1"><code><span class="pln">    title</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Dialog title"</span><span class="pun">,</span></code></li><li class="L2"><code><span class="pln">    content</span><span class="pun">:</span><span class="pln"> </span><span class="str">"This is a dialog content"</span><span class="pun">,</span></code></li><li class="L3"><code><span class="pln">    actions</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span></code></li><li class="L4"><code><span class="pln">        </span><span class="pun">{</span></code></li><li class="L5"><code><span class="pln">            title</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Ok"</span><span class="pun">,</span></code></li><li class="L6"><code><span class="pln">            onclick</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">el</span><span class="pun">){</span></code></li><li class="L7"><code><span class="pln">                $</span><span class="pun">(</span><span class="pln">el</span><span class="pun">).</span><span class="pln">data</span><span class="pun">(</span><span class="str">'dialog'</span><span class="pun">).</span><span class="pln">close</span><span class="pun">();</span></code></li><li class="L8"><code><span class="pln">            </span><span class="pun">}</span></code></li><li class="L9"><code><span class="pln">        </span><span class="pun">},</span></code></li><li class="L0"><code><span class="pln">        </span><span class="pun">{</span></code></li><li class="L1"><code><span class="pln">            title</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Cancel"</span><span class="pun">,</span></code></li><li class="L2"><code><span class="pln">            cls</span><span class="pun">:</span><span class="pln"> </span><span class="str">"js-dialog-close"</span></code></li><li class="L3"><code><span class="pln">        </span><span class="pun">}</span></code></li><li class="L4"><code><span class="pln">    </span><span class="pun">],</span></code></li><li class="L5"><code><span class="pln">    options</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="com">// dialog options</span></code></li><li class="L6"><code><span class="pln">    </span><span class="pun">}</span></code></li><li class="L7"><code><span class="pun">});</span></code></li><li class="L8"><code></code></li><li class="L9"><code></code></li><li class="L0"><code><span class="pln">$</span><span class="pun">.</span><span class="typ">Dialog</span><span class="pun">({</span></code></li><li class="L1"><code><span class="pln">    title</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Dialog title"</span><span class="pun">,</span></code></li><li class="L2"><code><span class="pln">    content</span><span class="pun">:</span><span class="pln"> </span><span class="str">"This is a dialog content"</span><span class="pun">,</span></code></li><li class="L3"><code><span class="pln">    actions</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span></code></li><li class="L4"><code><span class="pln">        </span><span class="pun">{</span></code></li><li class="L5"><code><span class="pln">            title</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Ok"</span><span class="pun">,</span></code></li><li class="L6"><code><span class="pln">            onclick</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">el</span><span class="pun">){</span></code></li><li class="L7"><code><span class="pln">                $</span><span class="pun">(</span><span class="pln">el</span><span class="pun">).</span><span class="pln">data</span><span class="pun">(</span><span class="str">'dialog'</span><span class="pun">).</span><span class="pln">close</span><span class="pun">();</span></code></li><li class="L8"><code><span class="pln">            </span><span class="pun">}</span></code></li><li class="L9"><code><span class="pln">        </span><span class="pun">},</span></code></li><li class="L0"><code><span class="pln">        </span><span class="pun">{</span></code></li><li class="L1"><code><span class="pln">            title</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Cancel"</span><span class="pun">,</span></code></li><li class="L2"><code><span class="pln">            cls</span><span class="pun">:</span><span class="pln"> </span><span class="str">"js-dialog-close"</span></code></li><li class="L3"><code><span class="pln">        </span><span class="pun">}</span></code></li><li class="L4"><code><span class="pln">    </span><span class="pun">],</span></code></li><li class="L5"><code><span class="pln">    options</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L6"><code><span class="pln">    </span><span class="pun">}</span></code></li><li class="L7"><code><span class="pun">});</span></code></li></ol></pre>
+    </div><div><footer style="background-color: #EFEAE3">
+    <div class="bg-steel no-tablet-portrait no-phone">
+        <div class="container padding20 fg-white">
+            <div class="carousel bg-transparent" data-role="carousel" data-controls="false" data-markers="false" data-effect="fade" data-height="200" style="width: 100%; height: 200px;">
+                <!--<div class="slide fg-white">-->
+                <!--<div class="place-left" style="margin-right: 20px">-->
+                <!--<img src="images/css-logo.png" style="height: 200px">-->
+                <!--</div>-->
+                <!--<h1>Developed with advice</h1>-->
+                <!--<p>Metro UI CSS developed with the advice of Microsoft to build the user interface and include: general styles, grid, layouts, typography, 20+ components, 300+ built-in icons.</p>-->
+                <!--<p>Metro UI CSS build with {LESS}. Metro UI CSS is open source and has MIT licensing model.</p>-->
+                <!--</div>-->
+
+                <!--<div class="slide fg-white">-->
+                <!--<div class="place-left" style="margin-right: 20px">-->
+                <!--<img src="images/bizspark_b_2.png" style="height: 200px">-->
+                <!--</div>-->
+                <!--<h1>BizSpark Startup</h1>-->
+                <!--<p>Metro UI CSS is a BizSpark Startup. Microsoft BizSpark is a global program that helps software startups succeed by giving them access to software development tools, connecting them with key industry players, and providing marketing visibility.</p>-->
+                <!--<p>BizSpark provides free software, support, and visibility to help startups succeed. Join BizSpark and become part of a global community that has over 50,000 members in 100+ countries.</p>-->
+                <!--<a class="button primary" href="http://bizspark.com">Join the BizSpark Program now</a>-->
+                <!--</div>-->
+
+                <div class="slide fg-white">
+                    <div class="place-left" style="margin-right: 20px">
+                        <img src="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/icon_PhpStorm.svg" style="height: 200px">
+                    </div>
+                    <h1>Thanks to JetBrains</h1>
+                    <p>This Project was created in the best IDE - 
+PhpStorm. Thanks to the company JetBrains for supporting the project in 
+the form of a license for a great product PhpStorm.</p>
+                    <a class="button success" href="http://www.jetbrains.com/phpstorm/">Get PhpStorm now!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="padding20">
+            <div class="grid">
+
+                <div class="row cells2">
+                    <div class="cell">
+                        <div class="row cells4">
+                            <div class="cell">
+                                
+                            <div class="image-container bordered image-format-square" style="width: 100%;"><div class="frame"><div style="width: 100%; height: 105px; background-image: url(&quot;images/spface2.jpg&quot;); background-size: cover; background-repeat: no-repeat; border-radius: 0px;"></div></div></div></div>
+                            <div class="cell colspan3 padding20 no-padding-top no-padding-bottom">
+                                <h1>Founder, author:</h1>
+                                <p class="text-secondary">
+                                    Hi! My name Sergey Pimenov and i'm author of Metro UI CSS from Kiev, Ukraine.
+                                </p>
+                                <div>
+                                    <span class="tag info">SKILLS:</span>
+                                    <span class="tag success">PHP</span>
+                                    <span class="tag success">CSS</span>
+                                    <span class="tag success">LESS</span>
+                                    <span class="tag success">HTML</span>
+                                    <span class="tag success">JavaScript</span>
+                                    <span class="tag success">jQuery</span>
+                                    <span class="tag success">MySQL</span>
+                                    <span class="tag success">Git</span>
+                                </div>
+                                <br>
+                                <div class="bg-white bg-red fg-white padding10 align-center no-display" id="job">
+                                    Open for job offer from EU, Canada, or USA (moving).
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="row cells4">
+                            <div class="cell">
+                                
+                            <div class="image-container bordered image-format-square" style="width: 100%;"><div class="frame"><div style="width: 100%; height: 105px; background-image: url(&quot;images/zadorozhnyi.jpg&quot;); background-size: cover; background-repeat: no-repeat; border-radius: 0px;"></div></div></div></div>
+                            <div class="cell colspan3 padding20 no-padding-top no-padding-bottom">
+                                <h3>Co-Founder:</h3>
+                                <p class="text-secondary">
+                                    Oleksander (Aleksandr) Zadorozhnyi - primary investments.
+                                </p>
+                                <div>
+                                    <span class="tag info">SKILLS:</span>
+                                    <span class="tag success">PHP</span>
+                                    <span class="tag success">VoIP</span>
+                                    <span class="tag success">TCP/IP</span>
+                                    <span class="tag success">SIP</span>
+                                    <span class="tag success">IPTV</span>
+                                    <span class="tag success">QoS</span>
+                                    <span class="tag success">Linux</span>
+                                    <span class="tag success">Start-ups</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <hr class="thin" style="margin-top: 20px">
+                        <a href="https://www.jetbrains.com/phpstorm/" title="license for PhpStorm"><img src="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/logo_JetBrains_4.png" style="width: 100px"></a>
+                        <a href="http://www.microsoft.com/bizspark/default.aspx" title="Bizspark Startup"><img src="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/MSFT_logo_png.png" style="width: 100px"></a>
+                        <a href="https://www.keycdn.com/" title="KeyCDN"><img src="Dialog%20%20%20Metro%20UI%20CSS%20-%20The%20front-end%20framework%20for%20developing%20projects%20on%20the%20web%20in%20Windows%20Metro%20Style_files/keycdn-logo.svg" style="width: 100px"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="padding20">
+            <!-- Google adsense block -->
+<div style="margin: 10px 0"><ins class="adsbygoogle" style="display: block; height: 90px;" data-ad-client="ca-pub-1632668592742327" data-ad-slot="8347181909" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:916px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:916px;background-color:transparent;"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:916px;height:90px;" width="916" height="90" frameborder="0"></iframe></ins></ins></ins></div>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- End of gad block -->
+
+        </div>
+
+        <div class="align-center padding20 text-small">
+            Copyright 2012-2016 <a href="http://pimenov.com.ua/">Sergey Pimenov</a>
+        </div>
+    </div>
+</footer>
+</div><div data-role="dialog" id="dialog" class="padding20 dialog" data-close-button="true" style="width: auto; height: auto; visibility: hidden;">
+            <h1>Simple dialog</h1>
+            <p>
+                Dialog :: Metro UI CSS - The front-end framework for developing projects on the web in Windows Metro Style
+            </p>
+        <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog3" class="padding20 dialog success" data-close-button="true" data-type="success" style="width: auto; height: auto; visibility: hidden;">
+            <h1>Simple dialog</h1>
+            <p>
+                Dialog :: Metro UI CSS - The front-end framework for developing projects on the web in Windows Metro Style
+            </p>
+        <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog4" class="padding20 dialog warning" data-close-button="true" data-type="warning" style="width: auto; height: auto; visibility: hidden;">
+            <h1>Simple dialog</h1>
+            <p>
+                Dialog :: Metro UI CSS - The front-end framework for developing projects on the web in Windows Metro Style
+            </p>
+        <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog5" class="padding20 dialog alert" data-close-button="true" data-type="alert" style="width: auto; height: auto; visibility: hidden;">
+            <h1>Simple dialog</h1>
+            <p>
+                Dialog :: Metro UI CSS - The front-end framework for developing projects on the web in Windows Metro Style
+            </p>
+        <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog6" class="padding20 dialog info" data-close-button="true" data-type="info" style="width: auto; height: auto; visibility: hidden;">
+            <h1>Simple dialog</h1>
+            <p>
+                Dialog :: Metro UI CSS - The front-end framework for developing projects on the web in Windows Metro Style
+            </p>
+        <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog7" class="padding20 dialog" data-close-button="true" data-windows-style="true" style="left: 0px; right: 0px; width: auto; height: auto; visibility: hidden;">
+            <div class="container">
+                <h1>Simple dialog</h1>
+                <p>
+                    Dialog :: Metro UI CSS - The front-end framework for developing projects on the web in Windows Metro Style
+                </p>
+            </div>
+        <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog8" class="info padding20 dialog" data-close-button="true" data-overlay="true" style="width: auto; height: auto; visibility: hidden;">
+            <h1>Simple dialog</h1>
+            <p>
+                This dialog with default overlay
+            </p>
+        <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog9" class="padding20 dialog" data-close-button="true" data-overlay="true" data-overlay-color="op-dark" data-overlay-click-close="true" style="width: auto; height: auto; visibility: hidden;">
+            <h1>Simple dialog</h1>
+            <p>
+                This dialog with colored overlay
+            </p>
+        <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog10" class="padding20 dialog bg-pink fg-white" data-close-button="true" data-background="bg-pink" data-color="fg-white" style="width: auto; height: auto; visibility: hidden;">
+            <h1>Simple dialog</h1>
+            <p>
+                This dialog with custom colors
+            </p>
+        <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog2" data-hide="3000" class="padding20 dialog" data-close-button="true" style="width: auto; height: auto; visibility: hidden;">
+            <h1>Simple dialog</h1>
+            <p>
+                This dialog will be auto closed after 3 sec
+            </p>
+        <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog-ajax" class="padding20 dialog" data-close-button="true" data-href="dialog-ajax-demo-data.html" data-width="600" style="width: 600px; height: auto; visibility: hidden;"><span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog-video-content" class="padding20 dialog bg-dark" data-background="bg-dark" data-close-button="true" data-content="&lt;iframe src=&quot;https://player.vimeo.com/video/86430443&quot; frameborder=&quot;0&quot;  allowfullscreen&gt;&lt;/iframe&gt;" data-width="600" data-content-type="video" style="width: 600px; height: auto; visibility: hidden;"><span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog-place-default" class="padding20 dialog" data-close-button="true" style="width: auto; height: auto; visibility: hidden;">
+                <h1>Simple dialog</h1>
+                <p>
+                    This dialog placed default
+                </p>
+            <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog-place-top-left" class="padding20 dialog" data-close-button="true" data-place="top-left" style="width: auto; height: auto; visibility: hidden;">
+                <h1>Simple dialog</h1>
+                <p>
+                    This dialog placed top-left
+                </p>
+            <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog-place-top-center" class="padding20 dialog" data-close-button="true" data-place="top-center" style="width: auto; height: auto; visibility: hidden;">
+                <h1>Simple dialog</h1>
+                <p>
+                    This dialog placed top-center
+                </p>
+            <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog-place-top-right" class="padding20 dialog" data-close-button="true" data-place="top-right" style="width: auto; height: auto; visibility: hidden;">
+                <h1>Simple dialog</h1>
+                <p>
+                    This dialog placed top-right
+                </p>
+            <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog-place-bottom-left" class="padding20 dialog" data-close-button="true" data-place="bottom-left" style="width: auto; height: auto; visibility: hidden;">
+                <h1>Simple dialog</h1>
+                <p>
+                    This dialog placed bottom-left
+                </p>
+            <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog-place-bottom-center" class="padding20 dialog" data-close-button="true" data-place="bottom-center" style="width: auto; height: auto; visibility: hidden;">
+                <h1>Simple dialog</h1>
+                <p>
+                    This dialog placed bottom-center
+                </p>
+            <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog-place-bottom-right" class="padding20 dialog" data-close-button="true" data-place="bottom-right" style="width: auto; height: auto; visibility: hidden;">
+                <h1>Simple dialog</h1>
+                <p>
+                    This dialog placed bottom-right
+                </p>
+            <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog-place-center-left" class="padding20 dialog" data-close-button="true" data-place="center-left" style="width: auto; height: auto; visibility: hidden;">
+                <h1>Simple dialog</h1>
+                <p>
+                    This dialog placed center-left
+                </p>
+            <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog-place-center-right" class="padding20 dialog" data-close-button="true" data-place="center-right" style="width: auto; height: auto; visibility: hidden;">
+                <h1>Simple dialog</h1>
+                <p>
+                    This dialog placed center-right
+                </p>
+            <span class="dialog-close-button"></span></div><div data-role="dialog" id="dialog-uf-1" class="padding20 dialog" data-close-button="true" style="width: auto; height: auto; visibility: hidden;">
+                <h1>Simple dialog</h1>
+                <p>
+                    This dialog opened with utility function
+                </p>
+            <span class="dialog-close-button"></span></div>
+
+</body></html>
